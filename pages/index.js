@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </div>
       <footer className="w-full text-[#747369] absolute bottom-5 mt-8 mb-4 bg-[#393939] text-center">
-        <div className="container">
+        <div className="">
           <span className="copyright">
             © 2021 Aaryan Porwal 🔗 -{" "}
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
