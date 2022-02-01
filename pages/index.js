@@ -83,10 +83,10 @@ export default function Home() {
             <div className="mt-5 text-gray-200">
               Your shortened URL:{" "}
               <a
-                className="bg-indigo-500 py-1 px-1 text-white underline hover:decoration-wavy hover:decoration-pink-500 hover:text-black"
+                className="inline-block rounded-lg bg-indigo-500 py-1 px-1 text-white underline hover:decoration-wavy hover:decoration-pink-500 hover:text-black"
                 href={shortUrl}
               >
-                {shortUrl}
+                https://short-edge.vercel.app/arzekqam
               </a>
             </div>
           ) : (
