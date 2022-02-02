@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState, React } from "react";
 
 export default function Home() {
-  const [value, setValue] = useState("https://blog.aaryanporwal.com");
+  const [value, setValue] = useState("");
   const [shortUrl, setShortUrl] = useState(null);
 
   return (
@@ -72,9 +72,11 @@ export default function Home() {
                 URL
               </label>
               <input
-                className="w-full px-3 py-2 rounded-lg outline-none text-white shadow-sm bg-transparent focus:border-indigo-500 focus:ring-[2px] focus:ring-pink-500 "
+                className="w-full px-3 py-2 rounded-lg outline-none text-white shadow-sm bg-transparent focus:border-indigo-500 focus:ring-[2px] focus:ring-pink-500 placeholder-purple-200"
                 type="url"
+                required
                 value={value}
+                placeholder="https://blog.aaryanporwal.com"
                 onChange={(e) => setValue(e.target.value)}
               />
             </div>
@@ -92,7 +94,7 @@ export default function Home() {
                 className="inline-block rounded-lg bg-indigo-500 py-1 px-1 text-white underline hover:decoration-wavy hover:decoration-pink-500 hover:text-black"
                 href={shortUrl}
               >
-                https://short-edge.vercel.app/arzekqam
+                {shortUrl}
               </a>
             </div>
           ) : (
