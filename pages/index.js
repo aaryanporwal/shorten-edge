@@ -19,6 +19,12 @@ export default function Home() {
           content="URL shortener using vercel edge functions and redis, made by Aaryan Porwal"
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <script
+          async
+          defer
+          data-website-id="b692d0d7-237c-4fea-8e85-d8ebd93a3dfd"
+          src="https://umami.blog.aaryanporwal.com/umami.js"
+        ></script>
       </Head>
       <h1 className=" text-white text-3xl text-center">
         URL Shortening service using{" "}
@@ -97,7 +103,7 @@ export default function Home() {
       <footer className="w-full text-[#747369] absolute bottom-5 mt-8 mb-4 bg-[#393939] text-center">
         <div className="">
           <span className="copyright">
-            © 2021 Aaryan Porwal 🔗 -{" "}
+            © {new Date().getFullYear()} Aaryan Porwal 🔗 -{" "}
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
               CC BY 4.0
             </a>
